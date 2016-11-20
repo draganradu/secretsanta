@@ -34,7 +34,7 @@
 	date_default_timezone_set('Europe/Bucharest');
 	$date = date('m/d/Y H:i:s a', time()); 
 	$an = date('Y', time());
-	echo "<h1> Secret santa {$an} </h1>"; 
+	echo "<h1> Secret Santa {$an} </h1>"; 
 	echo '<div id="head">' . $date . "</div>";
 ?>
 <div>
@@ -44,7 +44,7 @@
 	</form>
 </div>
 
-<a href="#b">
+<a href="https://github.com/draganradu/secretsanta-PHP">
 	<div id="footer" onclick="printeaza()">
 		<img src="img/q.png">
 	</div>

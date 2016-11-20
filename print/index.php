@@ -37,7 +37,7 @@
 date_default_timezone_set('Europe/Bucharest');
 $date = date('m/d/Y H:i:s a', time()); 
 $an = date('Y', time());
-echo "<h1> Secret santa {$an} </h1>"; 
+echo "<h1> Secret Santa {$an} </h1>"; 
 echo '<div id="head">' . $date . "</div>";
 
 $csv = array();
@@ -70,9 +70,9 @@ echo $nrtel[$i] . " - " . $nrtel[0] . "<span>" . $i ."</span><hr>";
 <?php
 
 for ($i = 0; $i<$count_array; $i++){
-echo '<div class="jumate"><img src="../img/copac.png" class="copac">'."{$nrtel[$i]} <br>Secret Santa-ul tau este<hr><h2> {$nrtel[$i+1]}</h2><hr> Nu uita ca un cel mai frumos cadou este din suflet. ( limita 50ron )<br> Oare cine iti o sa iti cumpere pentru tine cadou ?<img class='copac_jos' src='../img/puncte.jpg'><h5>{$i}</h5></div>";
+echo '<div class="jumate"><img src="../img/copac.png" class="copac">'."{$nrtel[$i]} <br>Secret Santa-ul tau este<hr><h2> {$nrtel[$i+1]}</h2><hr> Nu uita ca cel mai frumos cadou este din suflet. ( limita 50ron )<br> Oare cine o sa iti cumpere tie cadou ?<img class='copac_jos' src='../img/puncte.jpg'><h5>{$i}</h5></div>";
 }
-echo '<div class="jumate"><img src="../img/copac.png" class="copac">'."{$nrtel[$count_array]} <br>Secret Santa-ul tau este<hr><h2> {$nrtel[0]}</h2><hr> Nu uita ca un cel mai frumos cadou este din suflet. ( limita 50ron )<br> Oare cine iti o sa iti cumpere pentru tine cadou ?<img class='copac_jos' src='../img/puncte.jpg'><h5>{$count_array}</h5></div>";
+echo '<div class="jumate"><img src="../img/copac.png" class="copac">'."{$nrtel[$count_array]} <br>Secret Santa-ul tau este<hr><h2> {$nrtel[0]}</h2><hr> Nu uita ca cel mai frumos cadou este din suflet. ( limita 50ron )<br> Oare cine o sa iti cumpere tie cadou ?<img class='copac_jos' src='../img/puncte.jpg'><h5>{$count_array}</h5></div>";
 } else {
 	echo "trebuie sa introduci o lista valida";
 }
